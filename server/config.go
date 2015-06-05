@@ -134,7 +134,7 @@ func SetDefaults(config *Config) error {
 		config.KeyTag = k.KeyTag()
 		config.PrivKey = p
 	}
-	config.localDomain = appendDomain("local.dns", config.Domain)
+	config.localDomain = config.Domain
 	config.dnsDomain = config.Domain
 	stubmap := make(map[string][]string)
 	config.stub = &stubmap

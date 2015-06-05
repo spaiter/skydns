@@ -13,7 +13,7 @@ import (
 	"sync"
 
 	"github.com/coreos/go-etcd/etcd"
-	"github.com/skynetservices/skydns/msg"
+	"github.com/spaiter/skydns/msg"
 )
 
 // Config represents configuration for the Etcd backend - these values

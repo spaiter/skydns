@@ -20,10 +20,10 @@ import (
 	"github.com/coreos/go-etcd/etcd"
 	"github.com/miekg/dns"
 
-	backendetcd "github.com/skynetservices/skydns/backends/etcd"
-	"github.com/skynetservices/skydns/msg"
-	"github.com/skynetservices/skydns/server"
-	"github.com/skynetservices/skydns/stats"
+	backendetcd "github.com/spaiter/skydns/backends/etcd"
+	"github.com/spaiter/skydns/msg"
+	"github.com/spaiter/skydns/server"
+	"github.com/spaiter/skydns/stats"
 )
 
 var (
