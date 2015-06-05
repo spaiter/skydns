@@ -135,7 +135,7 @@ func SetDefaults(config *Config) error {
 		config.PrivKey = p
 	}
 	config.localDomain = appendDomain("local.dns", config.Domain)
-	config.dnsDomain = appendDomain("ns.dns", config.Domain)
+	config.dnsDomain = config.Domain
 	stubmap := make(map[string][]string)
 	config.stub = &stubmap
 	return nil
