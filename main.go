@@ -45,7 +45,7 @@ func env(key, def string) string {
 }
 
 func init() {
-	flag.StringVar(&config.Domain, "domain", env("SKYDNS_DOMAIN", "skydns.local."), "domain to anchor requests to (SKYDNS_DOMAIN)")
+	flag.StringVar(&config.Domain, "domain", env("SKYDNS_DOMAIN", "cdnrussia.com."), "domain to anchor requests to (SKYDNS_DOMAIN)")
 	flag.StringVar(&config.DnsAddr, "addr", env("SKYDNS_ADDR", "127.0.0.1:53"), "ip:port to bind to (SKYDNS_ADDR)")
 	flag.StringVar(&nameserver, "nameservers", env("SKYDNS_NAMESERVERS", ""), "nameserver address(es) to forward (non-local) queries to e.g. 8.8.8.8:53,8.8.4.4:53")
 	flag.BoolVar(&config.NoRec, "no-rec", false, "do not provide a recursive service")
